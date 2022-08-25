@@ -1,5 +1,9 @@
 class BirdsController < ApplicationController
 
+
+  def update
+
+end
   # GET /birds
   def index
     birds = Bird.all
@@ -25,7 +29,7 @@ class BirdsController < ApplicationController
   private
 
   def bird_params
-    params.permit(:name, :species)
+    params.permit(:name, :species, :likes)
   end
 
 end
